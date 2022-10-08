@@ -1,0 +1,28 @@
+s1=input().split() 
+s2=input().split() 
+r1=[];r2=[] 
+for i in s1: 
+  if i=='#': 
+    r1.append(i) 
+  else: 
+    if len(r1)!=0: 
+      r1.pop(-1) 
+for i in s2: 
+  if i=='#': 
+    r2.append(i) 
+  else: 
+    if len(r2)!=0: 
+      r2.pop(-1)
+if r1==r2: 
+  print("YES") 
+else: 
+  print("NO") 
+  
+  
+input:  kee#y       ======>  key
+        r#s#kee#y   ======> key
+        
+output: YES
+  
+  
+  
