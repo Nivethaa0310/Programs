@@ -1,0 +1,13 @@
+s=input().split(" ") 
+k=[];p=[] 
+for i in s: 
+  k.append(len(i)) 
+t=min(k) 
+for i in s: 
+  if len(i)==t: 
+    p.append(i) 
+print(p[0]) 
+
+input: We are to the party 
+
+output: We
