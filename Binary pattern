@@ -1,0 +1,15 @@
+n=int(input()) 
+for i in range(n,0,-1): 
+  if i%2==0: 
+    print(i*'1',end="") 
+  else: 
+    print(i*'0',end="") 
+  print() 
+  
+input:  5 
+
+output:   00000
+          1111
+          000
+          11
+          0
