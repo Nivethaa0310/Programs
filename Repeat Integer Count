@@ -1,0 +1,15 @@
+n=int(input()) 
+l=list(map(int,input().split()))
+k=[];t=[]
+for i in l: 
+    if i not in k: 
+        k.append(i) 
+    else: 
+        t.append(i) 
+print(len(t))
+
+
+input:   7 
+         20 10 10 30 40 10 20 
+         
+output:  3
