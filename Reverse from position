@@ -1,0 +1,11 @@
+s=input().strip() 
+n=int(input()) 
+k=s[n-1:][::-1] 
+t=s[:n-1] 
+print(t,end="") 
+print(k,end="")  
+
+input:  Hello 
+        3 
+        
+output:  Heolll 
