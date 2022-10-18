@@ -1,0 +1,16 @@
+n,k=map(int,input().split()) 
+l=list(map(int,input().split())) 
+p=[l[i:i+k] for i in range(0,len(l),k)] 
+t=[];m=[] 
+for i in p: 
+  t.append(sorted(i)) 
+for i in t: 
+  for j in i: 
+  m.append(j) 
+print(*m) 
+
+
+input:  11 3
+        880 111 1440 1326 1892 -365 -761 -489 -131 1199 324 
+        
+output: 111 880 1440 -365 1326 1892 -761 -489 -131 324 1199
