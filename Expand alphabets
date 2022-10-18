@@ -1,0 +1,20 @@
+#include<stdio.h> 
+#include<stdlib.h> 
+
+int main() 
+{ 
+ char c; 
+ int i; 
+ while(scanf("%c%d",&c,&i)==2) 
+ { 
+  for(int j=0;j<i;j++) 
+    { 
+    printf("%c",c); 
+    } 
+ } 
+ } 
+ 
+ 
+ input:  a2b3c4 
+ 
+ output: aabbbcccc
