@@ -1,0 +1,8 @@
+s="I am a good girl" 
+l=[] 
+s=s.split() 
+for i in s: 
+    l.append(len(i)) 
+print(sum(l))
+    
+output: 12
