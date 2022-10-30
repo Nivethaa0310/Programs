@@ -1,0 +1,22 @@
+n,x=map(int,input().split()) 
+l=list(map(int,input().split())) 
+l1=[];l2=[] 
+for i in l: 
+  if i>=x: 
+    l1.append(i) 
+for j in l2: 
+  if j<=x: 
+    l2.append(j) 
+if len(l1)>=len(l2): 
+  print(*l1) 
+else: 
+  print(*l2)  
+   
+   
+input:  7  5  
+        2 4 8 17 9 3
+
+output:  
+       8 17 9
+  
+ 
