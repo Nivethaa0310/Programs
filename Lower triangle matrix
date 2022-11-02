@@ -1,0 +1,36 @@
+n=int(input()) 
+l1=[list(map(int,input().split())) for i in range(n)] 
+l2=[list(map(int,input().split())) for i in range(n)] 
+c1=0;c2=0
+for i in range(n): 
+    for j in range(i+1): 
+        c1+=l1[i][j] 
+        c2+=l2[i][j] 
+if c1>=c2: 
+    for i in range(n): 
+        for j in range(i+1): 
+            print(l1[i][j],end=" ") 
+        print() 
+else: 
+    for i in range(n): 
+        for j in range(i+1): 
+            print(l2[i][j],end=" ") 
+        print() 
+        
+        
+input:
+4 
+1 2 3 4
+4 2 6 7
+5 8 3 5
+9 0 6 3
+5 6 3 2
+5 7 2 1
+7 4 5 7
+1 2 3 4 
+output: 
+
+5 
+5 7 
+7 4 5 
+1 2 3 4 
