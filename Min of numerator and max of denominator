@@ -1,0 +1,14 @@
+N=int(input())
+lst = input().strip().split()
+m1,m2=[],[]
+for i in lst:
+    a,b = i.split("/")
+    m1.append(int(a))
+    m2.append(int(b))
+print(min(m1),max(m2))
+ 
+ 
+input:  5 
+        1/2 3/7 6/4 9/1 4/3 
+
+output: 1 7 
