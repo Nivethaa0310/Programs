@@ -1,0 +1,7 @@
+n=input().strip() 
+k=int(n,2) 
+print(bin(k)[2:]) 
+
+input:  101 (5)  next integer is 6
+
+output: 110  (binary of 6)
