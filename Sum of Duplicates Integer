@@ -1,0 +1,15 @@
+n=int(input());f=[]
+a=list(map(int,input().split()))
+s=set(a)
+for i in s:
+    if a.count(i)>1:
+        f.append(i)
+if len(f)==0:
+    print(-1)
+else:
+    print(sum(f)) 
+    
+input: 5 
+       10 20 30 20 10 
+       
+output: 30
