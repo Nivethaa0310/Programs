@@ -1,0 +1,17 @@
+s=input().strip() 
+l=[] 
+for i in s: 
+    l.append(i) 
+l=list(map(int,l))
+for i in range(len(l)): 
+    if l[i]%2==0: 
+        l[i]=0
+        
+    else: 
+        l[i]=1 
+l=list(map(str,l)) 
+print(''.join(l))  
+
+
+input :  1234 
+output:  1010
