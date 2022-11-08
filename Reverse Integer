@@ -1,0 +1,15 @@
+n=int(input()) 
+if n>0: 
+    ans=int(str(n)[::-1]) 
+else: 
+    ans=int(str(n*-1)[::-1])*-1 
+print(ans) 
+
+input: 1234 
+output: 4321 
+
+input: -123 
+output: -321 
+
+input: 1200 
+output:21
