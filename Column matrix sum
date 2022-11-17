@@ -1,0 +1,17 @@
+To add the columns if the first element of the column is odd. 
+
+
+m,n=map(int,input().split());s=0
+l=[list(map(int,input().split()))for _ in range(m)]
+l=list(zip(*l))
+for i in l:
+    if i[0]%2==1:
+        s+=sum(i)
+print(s if s>0 else -1)  
+
+input : 3 4
+        1 2 3 4
+        4 2 6 7
+        0 5 2 6 
+        
+output:  16
