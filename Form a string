@@ -1,0 +1,9 @@
+N,X=map(int,input().split())
+al='abcdefghijklmnopqrstuvwxyz'
+S=al[X-1]
+while len(S)<=N:
+    S+=al[:X]
+print(S[:N]) 
+
+input: 7 3 
+output: cabcabc
