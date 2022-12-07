@@ -1,0 +1,24 @@
+        s=input().strip()
+        s=list(s) 
+        i=0 
+        j=len(s)-1 
+        v=['a','e','i','o','u']
+        while i<j: 
+            while i<j and s[i].lower() not in v: 
+                i+=1 
+            while i<j and s[j].lower() not in v: 
+                j-=1 
+            if s[i].lower() in v and s[j].lower() in v: 
+                t = s[i] 
+                s[i] = s[j] 
+                s[j] = t 
+            i+=1 
+            j-=1 
+        return ''.join(s)
+
+
+input: hello 
+output: holle 
+
+input: leetcode 
+output: loetcede
