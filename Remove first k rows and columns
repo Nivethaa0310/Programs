@@ -1,0 +1,22 @@
+n=int(input()) 
+mat=[] 
+for i in range(n): 
+    r=list(map(int,input().split())) 
+    mat.append(r) 
+k=int(input())
+t=mat[k:] ;p=[]
+for i in t: 
+    p.append(i[k:]) 
+for i in p: 
+    print(*i,end="\n")
+
+
+input: 4
+       1 2 3 4
+       5 7 8 9
+       2 4 5 8
+       1 4 6 0 
+       2
+       
+ output:  5 8
+          6 0
