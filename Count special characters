@@ -1,0 +1,18 @@
+You are given with a Sentence S. Print the number of special characters including 
+word space in the sentence. 
+
+s=input().strip() 
+k=''.join(s) 
+c=0 
+t='@$^%*[]():-'
+for i in s: 
+    if  i in t: 
+        c+=1 
+print(c) 
+
+output: 
+
+Sample Input:
+Ther1 @is ^%$ in this lin*e
+Sample Output:
+6
