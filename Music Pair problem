@@ -1,0 +1,33 @@
+***The first line of the output contains a pair of integers representing the Indices of 
+two songs whose combined runtime will finish exactly 30 seconds before the 
+rider reaches their stop separated by space. 
+If no such pair is possible, return a pair with -1 -1.***
+ 
+ 
+n=int(input())
+l=list(map(int,input().split())) 
+k=[l[i:j] for i in range(len(l)) for j in range(i+1,len(l)+1)] 
+v=[]
+for i in k: 
+    if len(i)==2: 
+        v.append(i) 
+ind=[] 
+for i in v: 
+    if n-sum(i)==30: 
+        print(l.index(i[0]),l.index(i[1])) 
+        break
+else: 
+    print(-1,-1) 
+    
+    
+output: 
+Sample Input 1:
+90
+70 10 25 35 60
+Sample Output 1:
+2 3
+Sample Input 2:
+90
+70 10 25 45 60
+Sample Output 2:
+-1 -1
