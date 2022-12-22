@@ -1,0 +1,23 @@
+s = input().strip()
+k = 1;cur=0;leng=len(s)
+while cur<leng:
+    t = ''
+    for i in range(k):
+        if cur<leng:t+=s[cur]+' '
+        else:t+='*'+' '
+        cur+=1
+    k+=1
+    print(t[::-1]) 
+    
+input:  happy 
+
+output: 
+        h 
+        p a 
+        * y p 
+        
+input :  orange 
+
+output:  o 
+         a r 
+         e g n
