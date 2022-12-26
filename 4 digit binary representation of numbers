@@ -1,0 +1,19 @@
+n=1234 
+k=str(n)
+v='0000'
+l=[]
+for i in k:
+    l.append(bin(int(i))[2:]) 
+t=[] 
+for i in l: 
+    t.append(v[:(4-len(i))]+i) 
+print(t) 
+
+
+input:  1234 
+
+output: 
+        0001 
+        0010 
+        0011 
+        0100
