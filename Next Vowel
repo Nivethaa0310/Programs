@@ -1,0 +1,12 @@
+ch = input().strip()
+print(ch,end="")
+for i in range(ord(ch)+1,ord('z')+1):
+    print(chr(i),end="")
+    if chr(i) in "aeiou":
+        break 
+        
+ input : g 
+ output: ghi 
+ 
+ input: e 
+ output: efghi
