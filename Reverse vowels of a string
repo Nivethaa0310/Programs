@@ -14,7 +14,24 @@
                 s[j] = t 
             i+=1 
             j-=1 
-        return ''.join(s)
+        return ''.join(s) 
+      ----------------------------------- 
+      
+s=input().strip() 
+vow='' 
+v='aeiouAEIOU' 
+for i in s: 
+    if i in v: 
+        vow+=i 
+r='' 
+for i in s: 
+    if i in v: 
+        r+=vow[-1] 
+        vow = vow[:-1]
+    else: 
+        r+=i 
+print(r)
+-----------------------------------------
 
 
 input: hello 
