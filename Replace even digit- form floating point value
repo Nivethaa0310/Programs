@@ -1,0 +1,10 @@
+s=input().strip()
+l=[i for i in s if int(i)%2==0] 
+k=l[-1] 
+s = s.replace(k,'.') 
+s = float(s)
+print("%.2f"%(s)) 
+
+input : 2516799 
+
+output: 251.80
