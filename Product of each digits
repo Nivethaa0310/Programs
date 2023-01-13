@@ -1,0 +1,17 @@
+x,y=input().split(" ")  
+x=list(x) ; y=list(y) 
+l=[] 
+for i in x: 
+    for j in y: 
+        l.append(int(i)*int(j)) 
+for i in range(0,len(l),len(x)+1): 
+    print(l[i],end=" ") 
+    
+    
+input:  123 456
+
+output: 4 10 18 
+
+input: 783 290 
+
+output: 14 72 0
