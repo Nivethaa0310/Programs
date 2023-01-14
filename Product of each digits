@@ -6,6 +6,14 @@ for i in x:
         l.append(int(i)*int(j)) 
 for i in range(0,len(l),len(x)+1): 
     print(l[i],end=" ") 
+ 
+ -----------------------------------  
+ 
+ x, y =map(str,input().split())
+for i in range(len(x)):
+    print(int(x[i])*int(y[i]),end=" ") 
+    
+------------------------------------
     
     
 input:  123 456
