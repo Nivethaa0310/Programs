@@ -1,0 +1,21 @@
+s=input().strip() 
+n=int(input()) 
+i=0 
+while i<len(s): 
+    k = s[i:i+n] 
+    i=i+n 
+    print(k) 
+    
+    
+input: orange 
+       3
+
+output: ora 
+        nge 
+        
+input: competition 
+       4
+
+output: comp 
+        etit 
+        ion
