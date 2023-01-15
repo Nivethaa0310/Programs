@@ -1,0 +1,11 @@
+s=input().strip() 
+s=s.split('#') 
+print(*s[1:len(s)-1],end=" ") 
+
+input: Dhoni#007#shfj4#hfmn#hju 
+
+output: 007 shfj4 hfmn 
+
+input: #dacvrty# 
+
+output: dacvrty
