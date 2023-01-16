@@ -1,0 +1,12 @@
+class Solution:
+    def hasAlternatingBits(self, n: int) -> bool: 
+        b=bin(n) 
+        b=str(b)
+        b=b[2:] 
+        return '00' not in b and '11' not in b 
+        
+ input: 7 
+ output: false 
+ 
+ input: 3 
+ output: true
