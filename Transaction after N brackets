@@ -1,0 +1,22 @@
+n=int(input()) 
+initial=1000 
+for i in range(n): 
+    x,y=input().split(" ") 
+    y=int(y) 
+    if x=='+': 
+        initial+=y   
+    else: 
+        initial-=y  
+        
+print(initial)
+
+
+input: 5 
+       + 1000 
+       - 200 
+       + 500 
+       + 1200 
+       + 600 
+       
+output: 4100
+       
