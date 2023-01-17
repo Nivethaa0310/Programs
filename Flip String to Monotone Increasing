@@ -1,0 +1,20 @@
+class Solution:
+    def minFlipsMonoIncr(self, s: str) -> int: 
+        ones,ans=0,0 
+        for i in s: 
+            if i=='1': 
+                ones+=1 
+            elif ones: 
+                ones-=1 
+                ans+=1 
+        return ans 
+        
+        
+Input: s = "00110"
+Output: 1
+Explanation: We flip the last digit to get 00111. 
+
+
+Input: s = "010110"
+Output: 2
+Explanation: We flip to get 011111, or alternatively 000111.
