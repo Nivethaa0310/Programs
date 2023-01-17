@@ -1,0 +1,28 @@
+n,x=map(int,input().split())
+l=[] 
+for i in range(n): 
+    l.append(input().strip()) 
+k=[i for i in l if len(i)!=x] 
+if len(k)==0: print(-1) 
+else: 
+    for i in k: 
+        print(i) 
+        
+------------------------------------------------        
+input: 4 6 
+       football 
+       player
+       cricket 
+       coder 
+       
+output: football 
+        cricket 
+        coder 
+        
+input: 4 3 
+       all 
+       age 
+       and 
+       are 
+       
+ output: -1
