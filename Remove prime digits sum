@@ -1,0 +1,18 @@
+x,y=input().split(" ") 
+l1=[i for i in x] 
+l2=[i for i in y] 
+p=['2','3','5','7'] 
+r1=[i for i in l1 if i not in p] 
+r2=[i for i in l2 if i not in p] 
+if len(r1)==0: r1='0' 
+if len(r2)==0: r2='0' 
+v1= ''.join(r1) ; v2= ''.join(r2) 
+print(int(v1)+int(v2)) 
+
+
+
+input: 191 234 
+output: 195 
+
+input: 3456 3572 
+output: 46
