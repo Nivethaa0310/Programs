@@ -1,0 +1,28 @@
+n=int(input()) 
+x=int(input())
+y=int(input())
+k = int(str(n),x)
+b = ""
+while k>0:
+        d = int(k%y)
+        if d<10:
+            b += str(d)
+        else:
+            b+= chr(ord('A')+d-10)  
+        k //= y
+b = b[::-1] 
+print(b) 
+
+--------------------------------------------
+
+input: 25
+       6
+       8
+       
+output: 21 
+
+input: 1001 
+       2
+       10 
+       
+output: 9
