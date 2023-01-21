@@ -1,0 +1,7 @@
+s,n = input().split()
+for i in range(0,len(s),int(n)*2):
+    print(s[i:i+int(n)],end="")  
+    
+input: replacement 3 
+
+output: repeme
