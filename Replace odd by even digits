@@ -1,0 +1,20 @@
+N=input().strip()
+even,odd=[],[]
+for digit in N:
+    if int(digit)%2==0:
+        even.append(digit)
+    else:
+        odd.append(digit)
+result=""
+for digit in N:
+    if int(digit)%2==0:
+        result+=odd.pop(0)
+    else:
+        result+=even.pop(0)
+print(int(result)) 
+
+input: 235410 
+output: 324501
+
+input:5638 
+output: 6583
