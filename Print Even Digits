@@ -1,0 +1,15 @@
+n=int(input()) 
+l=list(map(int,input().split())) 
+l=list(map(str,l))
+k=[]
+for i in l: 
+    if all(int(i) % 2 == 0 for i in str(i)): 
+        k.append(i) 
+if len(k)==0: print(-1) 
+else: print(*k)
+
+
+input: 5
+       21 34 246 87 62
+       
+output: 246 62
