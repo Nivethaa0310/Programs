@@ -1,0 +1,15 @@
+s=input().strip() 
+c={i:0 for i in 'aeiou'} 
+for i in s: 
+    if i in c: 
+        c[i]+=1 
+for i,j in c.items(): 
+    print(i, j) 
+    
+ 
+input: asedrfthuou
+output: a 1
+        e 1
+        i 0 
+        o 1 
+        u 2 
