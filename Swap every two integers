@@ -1,0 +1,16 @@
+n = int(input())
+l = list(map(str,input().split()))
+for i in l:
+    s=""
+    for val in i:
+        if val in "2357":
+            s+=val
+    if len(s)==0:
+        print("-1",end=" ")
+    else:
+        print(''.join(sorted(s)),end=" ")
+        
+ input: 5
+        2245 2087 48 17 689
+        
+ output: 225 27 -1 7 -1
