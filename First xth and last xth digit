@@ -1,0 +1,14 @@
+n,x= input().split() 
+n=list(n)
+x=int(x) 
+l=len(n)
+print(n[x -1]) 
+print(n[l-x]) 
+
+
+
+input: 34586 2
+output: 32 
+
+input: 16480 5
+output: 0
