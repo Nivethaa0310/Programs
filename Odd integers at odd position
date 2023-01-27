@@ -1,0 +1,14 @@
+n = int(input())
+l=list(map(int,input().split())) 
+k=[l[i] for i in range(len(l)) if l[i]%2!=0 and i%2==0] 
+print(*k) 
+
+input: 6 
+       10 13 15 12 31 33 
+       
+output: 15 31 
+
+input: 3 
+       21 10 27 
+       
+output: 21 27
