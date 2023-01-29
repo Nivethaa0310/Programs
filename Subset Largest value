@@ -1,0 +1,16 @@
+n,t= map(int,input().split()) 
+l=list(map(int,input().split())) 
+i=0 
+k=[]
+while i<len(l): 
+    r=l[i:i+t] 
+    i+= t  
+    k.append(r) 
+p=[max(i) for i in k ] 
+print(*p)
+    
+    
+input: 9 3 
+       1 2 3 4 7 2 100 21 33 
+       
+output: 3 7 100
