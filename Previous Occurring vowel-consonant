@@ -1,0 +1,25 @@
+s=input().strip() 
+v='aeiouAEIOU' 
+c='bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ' 
+pv=pc="" 
+r="" 
+for i in s: 
+    if i in v: 
+        if pv: 
+            r+=pv 
+        else: 
+            r+=i 
+        pv=i 
+    elif i in c: 
+        if pc: 
+            r+=pc 
+        else: 
+            r+=i
+        pc=i 
+print(r) 
+
+input: apple 
+output: apppa 
+
+input:manager 
+output: mamanag
