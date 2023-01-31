@@ -1,0 +1,23 @@
+c=input() 
+alp='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' 
+v='aeiouAEIOU' 
+if c in v: 
+    print(alp[alp.index(i)+1]) 
+else: 
+    k= alp.index(c) 
+    for i in range(k+1,len(alp)): 
+        if alp[i] not in v: 
+            if c.islower(): 
+                print(alp[i].lower()) 
+                break 
+            else: 
+                print(alp[i].upper()) 
+                break 
+  
+  
+                
+ input: F 
+ output: G 
+ 
+ input: T 
+ output: V
