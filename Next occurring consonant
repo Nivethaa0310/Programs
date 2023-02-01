@@ -12,7 +12,15 @@ else:
                 break 
             else: 
                 print(alp[i].upper()) 
-                break 
+                break  
+                
+  ----------------------------------------------------------  
+  
+pk=input().strip()
+lp=[chr(j) for j in range(ord(pk)+1,ord(pk)+3) if chr(j) not in "AEIOUaeiou"]
+print(*lp[0]) 
+
+--------------------------------------------------------------
   
   
                 
