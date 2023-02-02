@@ -1,0 +1,26 @@
+a=int(input())
+l=input().split()
+alp=[]
+num=[]
+for i in l:
+    alp.append(i[0])
+    num.append(int(i[1:]))
+s=0
+for i in l:
+    if i[0]==min(alp):
+        if int(i[1:])>s:
+            s=int(i[1:])
+print(min(alp),s,sep="")   
+ 
+---------------------------------------------------
+input: 5
+       k21 j34 a31 c45 g43 
+       
+output: a31 
+
+
+input: 5 
+       k23 k45 k12 k86 k37 
+       
+output: k87 
+
