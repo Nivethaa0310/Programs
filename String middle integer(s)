@@ -1,0 +1,14 @@
+import re
+s=input().strip()
+l=[int(i) for i in re.findall(r'\d+',s)] 
+if len(l)%2!=0: 
+    print(*l[len(l)//2]) 
+else: 
+    print(*l[len(l)//2:]) 
+    
+
+input: asb234nfrt56ndt895lty378nh 
+output: 56 895 
+
+input: asb234nfrt56ndt895lty 
+output: 56
