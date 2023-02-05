@@ -1,0 +1,21 @@
+s1=input().strip() 
+s2=input().strip() 
+s1=s1.split() 
+s2=s2.split() 
+r=[] 
+for i in range(min(len(s1),len(s2))): 
+    if len(s1[i]) > len(s2[i]): 
+        r.append(s1[i]) 
+    elif len(s1[i]) < len(s2[i]): 
+        r.append(s2[i]) 
+    else: 
+        r.append(s1[i]) 
+
+r+=s1[len(r):] or s2[len(r):] 
+print(" ".join(r)) 
+
+
+input: This is a day 
+       Yes he need 
+       
+output: This is need day 
