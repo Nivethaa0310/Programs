@@ -1,0 +1,19 @@
+s= input().strip()
+k=int(input())
+i=0 
+l=[] ; p=[]
+while i<len(s): 
+    r=s[i:i+k] 
+    i+=k 
+    l.append(r) 
+for i in l: 
+    if i[0]!="".join(list(set(i[1:]))): 
+        p.append(i) 
+print(p)
+            
+            
+input: 'cooltemmmmper 
+output: cooltemper 
+
+input:rrrrrtpppp 
+output: rt
