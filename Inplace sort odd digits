@@ -1,0 +1,12 @@
+N=input().strip()
+odd=[int(digits) for digits in N if int(digits)%2]
+odd.sort()
+for digit in N:
+    if int(digit)%2:
+        print(odd.pop(0),end="")
+    else:
+        print(digit,end="") 
+        
+
+input: 325183 
+output: 123385
