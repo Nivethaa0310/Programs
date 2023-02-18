@@ -1,0 +1,15 @@
+s=input().strip()
+l=[]
+rev=s[::-1]
+vow="aeiou"
+con=0
+for c in rev:
+    if c not in vow:
+        con+=1
+    l.append(con)
+print(*l[::-1]) 
+
+
+input: telegram 
+
+output: 5 4 4 3 3 2 1 1
