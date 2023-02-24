@@ -17,6 +17,17 @@ for i in l.values():
 for j in s: 
     if j in mw: 
         print(j,end=' ') 
+        
+ ------------------------------------ 
+
+g=input()
+g=g.split()
+h=[len(i) for i in g]
+c=[h.count(i) for i in h]
+m=max(c)
+for i in range(len(c)):
+    if c[i]==m:
+        print(g[i],end=" ")
 
 '''
 input: pass on the plate to him 
