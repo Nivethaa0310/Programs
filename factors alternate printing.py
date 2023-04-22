@@ -11,4 +11,11 @@ for i in range(max(a1, a2)):
     if i < a2:
         newlist.append(list2[i])
 
-print(*newlist)
+print(*newlist) 
+
+''' 
+input: 100 24 
+
+output: 1 1 2 2 4 3 5 4 10 6 20 8 25 12 50 24 100 
+
+'''
